@@ -283,3 +283,10 @@ hr {
         width: 100%;
         /* padding: 0; */
 }
+.link-icons{
+    
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 60px;
+    
+}
