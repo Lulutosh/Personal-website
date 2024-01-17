@@ -285,8 +285,23 @@ hr {
 }
 .link-icons{
     
-        display: grid;
-        grid-template-columns: auto auto;
-        font-size: 60px;
+    
+           display: grid;
+           grid-template-columns: auto auto;
+           font-size: 60px;
+           justify-items: start;
+           align-items: baseline;
+           justify-content: start;
+           /* align-content: center; */
+       
+
+    
+}
+.link-icons span{
+    margin: 50px;
+}
+.link-icons span:hover {
+    filter: drop-shadow(3px 2px 4px #dd44bc);
+    
     
 }
