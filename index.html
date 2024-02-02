@@ -8,9 +8,10 @@
    <link
        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@200;400;700&family=Prompt:wght@900&family=Rubik+Lines&family=Train+One&display=swap"
        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/37a3472170.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/37a3472170.js" crossorigin="anonymous"></script>
-    <title>Lusanda</title>
+    <script src="app.js" defer></script>
+    <title>Lusanda Porftfolio Website</title>
 
 </head>
 <body>
@@ -148,31 +149,6 @@
     </section>
     <footer></footer>
   
-    <script>
-        //code for custom mouse cursor
-        //get the element and store in variable
-       const cursorMouse = document.querySelector('.mouse-cursor');
-
-       //arrow function which passes the event as the parameter then get x and y axis cursor position, storing them in variables
-
-       const cursorMove = (e) => {
-        const mouseY = e.clientY; //vertical
-        const mouseX = e.clientX; //horizontal
-
-        //use css style transform property to translate
-
-        cursorMouse.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-        //cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
        
-       }
-        window.addEventListener('mousemove', cursorMove);
-
-        //function that does auto typing effect
-
-
-
-
-
-    </script>
 </body>
 </html>
