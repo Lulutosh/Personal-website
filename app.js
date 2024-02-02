@@ -18,4 +18,30 @@
   window.addEventListener('mousemove', cursorMove);
 
  //code which makes animation on scroll effect
+
+
+ /*get elememnts which intersection-animate class, this helps us select the 
+ elemnts which will animate on scroll*/
+
+ const animate = document.querySelectorAll('.animation');
+
+ const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting){
+      entry.target.classList.add('scroll-animate')
+    }
+      else {
+        entry.target.classList.remove('scroll-animate')
+      }
+      })
+      },
+      {threhold: 0.5
+      });
+    
+  
+  for (let i=0 ; i < animate.length ; i++){
+    const elements = animate[i];
+    observer.observe(elements);
+  }
  
+
