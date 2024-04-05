@@ -107,6 +107,12 @@ hr {
     size: 10px;
     color: #f50550;
 }
+footer{
+     text-align: center;
+}
+ #learnings {
+    height:500px;
+}
 
 .header-name {
     font-family: 'Barlow Condensed', sans-serif;
